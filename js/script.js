@@ -21,7 +21,7 @@ if (etaPassegero > 65){
   
 }
 
-prezzoBiglietto = prezzoBiglietto + "0" + " €"
+prezzoBiglietto = prezzoBiglietto.toFixed(2) + " €"
 
 
 document.getElementById("prezzo-biglietto").innerHTML = prezzoBiglietto;
