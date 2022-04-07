@@ -1,6 +1,4 @@
-/* 
 
-*/
 const numeroKilometri = prompt("Quanti kilometri deve percorrere?" );
 
 if(isNaN(numeroKilometri)){
@@ -22,16 +20,12 @@ let prezzoBiglietto = (0.21 * numeroKilometri);
 
 if (etaPassegero > 65){
 
-  prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto/100 * 40);
+  prezzoBiglietto *= .6;
   
 }else if (etaPassegero < 18){
 
-  prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto/100 * 20); 
+  prezzoBiglietto *= .4; 
 
-}else{
-
-  prezzoBiglietto = prezzoBiglietto
-  
 }
 
 prezzoBiglietto = prezzoBiglietto.toFixed(2) + " €"
